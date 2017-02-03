@@ -37,14 +37,12 @@ $posts = "enviado=1";
 A resposta do reCaptcha v2 deve ser enviada como post com o parametro g-recaptcha-response
 Você insere $resposta->captcha_texto no textarea id="g-recaptcha-response" ou envia este parametro como post
 */
-
 $posts .= "&g-recaptcha-response=".$resposta->captcha_texto.";"; 
 
 /*	
 Usamos o curl aqui, para enviar a resposta para o http://decifracaptcha.com.br/Sandbox/recaptcha
 mas você pode usar a ferramenta que quiser
 */
-
 $curl_options = array(
     CURLOPT_RETURNTRANSFER => true, //retorna o conteúdo da requisição via curl
     CURLOPT_POST => true, // tipo de requisição post
@@ -99,7 +97,7 @@ $arquivo = "../captchas/captcha.jpg";
 //Instanciando a classe DecifraCaptcha
 $DecifraCaptcha = new DecifraCaptcha();
 
-
+//Chamando o método para captchas e reCaptcha v1
 $resposta = $DecifraCaptcha->decifrarCaptcha($token, $arquivo);
 
 echo "<pre>";
