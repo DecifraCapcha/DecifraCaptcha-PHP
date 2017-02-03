@@ -25,7 +25,8 @@ $DecifraCaptcha = new DecifraCaptcha();
 $url = "http://decifracaptcha.com.br/Sandbox/recaptcha"; 
 
 /* 
-Para pegar o data_sitekey, entre na página onde está o reCaptcha e procure por "data_sitekey". Pegue então o valor que está neste atributo e coloque abaixo
+Para pegar o data_sitekey, entre na página onde está o reCaptcha e procure por "data_sitekey". 
+Pegue então o valor que está neste atributo e coloque abaixo
 */
 $data_sitekey = "6LfkmBIUAAAAAEyzJEjtl8x07609j5bQssB90Mhm"; 
 
