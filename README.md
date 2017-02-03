@@ -83,7 +83,7 @@ A resposta vem com os seguintes parametros
 * captcha_texto: a informação que você usará para passar pelo reCaptcha v2
 
 ### Resolvendo captcha ou reCaptcha V1 (captchas em formato de texto ou número)
-```
+```php
 <?php 
 require_once("../DecifraCaptcha.php");
 
