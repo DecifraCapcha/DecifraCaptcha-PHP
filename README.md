@@ -15,9 +15,6 @@ require_once("../DecifraCaptcha.php");
 //cadastre-se no site http://decifracaptcha.com.br e coloque seu token aqui
 $token = "coloqueseueutokenaqui"; 
 
-//aqui vai o seu arquivo com o caminho correspondente
-$arquivo = "../captchas/captcha.jpg"; 
-
 //instânciando a classe DecifraCaptcha
 $DecifraCaptcha = new DecifraCaptcha();  
 
