@@ -1,0 +1,13 @@
+{
+    "name": "DecifraCaptcha",
+    "description": "Solução para resolver, burlar e decifrar captchas e reCaptchas",
+    "authors": [
+        {
+            "name": "DecifraCaptcha",
+            "email": "contato@decifracaptcha.com.br"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.8"
+    }
+}
