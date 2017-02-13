@@ -13,7 +13,7 @@ Entre no site http://decifracaptcha.com.br para você receber seu token
 require_once("../DecifraCaptcha.php");
 
 //cadastre-se no site http://decifracaptcha.com.br e coloque seu token aqui
-$token = "coloqueseueutokenaqui"; 
+$token = "coloqueseutokenaqui"; 
 
 //instânciando a classe DecifraCaptcha
 $DecifraCaptcha = new DecifraCaptcha();  
@@ -29,6 +29,11 @@ $data_sitekey = "6LfkmBIUAAAAAEyzJEjtl8x07609j5bQssB90Mhm";
 
 //Chamando o método para decifrarRecaptcha v2
 $resposta = $DecifraCaptcha->decifrarRecaptcha($token, $url, $data_sitekey);
+
+//Imprimindo a resposta
+echo "<pre>";
+print_r($resposta);
+echo "</pre><br>";
 
 //um parametro exigido pela página http://decifracaptcha.com.br/Sandbox/recaptcha para validar o captcha
 $posts = "enviado=1"; 
@@ -88,7 +93,7 @@ A resposta vem com os seguintes parametros
 require_once("../DecifraCaptcha.php");
 
 //cadastre-se no site http://decifracaptcha.com.br e coloque seu token aqui
-$token = 'coloqueseueutokenaqui'; 
+$token = 'coloqueseutokenaqui'; 
 
 //aqui vai o seu arquivo com o caminho correspondente
 //obs: se você quer resolver um captcha de um site, você deve fazer o download dele primeiro para enviar
@@ -100,9 +105,10 @@ $DecifraCaptcha = new DecifraCaptcha();
 //Chamando o método para captchas e reCaptcha v1
 $resposta = $DecifraCaptcha->decifrarCaptcha($token, $arquivo);
 
+//Imprimindo a resposta
 echo "<pre>";
 print_r($resposta);
-echo "</pre>";
+echo "</pre><br>";
 
 ?>
 ```
